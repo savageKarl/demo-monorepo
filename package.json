@@ -11,6 +11,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@changesets/cli": "2.26.2",
 		"bumpp": "^9.2.0",
 		"typescript": "^5.2.2"
 	}
