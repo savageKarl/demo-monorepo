@@ -1,15 +1,17 @@
 {
 	"name": "516.2_monorepo",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "pnpm -r --filter=./packages/* run build"
+		"build": "pnpm -r --filter=./packages/* run build",
+		"release": "bumpp package.json packages/**/package.json"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"bumpp": "^9.2.0",
 		"typescript": "^5.2.2"
 	}
 }
