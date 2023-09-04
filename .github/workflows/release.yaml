@@ -4,37 +4,24 @@ on:
   push:
     tags:
       - "v*"
-
+#
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
         with:
-          fetch-depth: 0
-
-      - name: Setup node
-        uses: actions/setup-node@v2
+          version: 7
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: "16"
-          registry-url: https://registry.npmjs.org/
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
-      - name: Install dependencies
-        run: pnpm i
-
-      - name: Build
-        run: pnpm run build
-
-      - name: Publish
-        run: pnpm publish -r --access public --no-git-checks
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+          cache: pnpm
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm build
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-
-      - run: npx changelogithub
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN  }}
