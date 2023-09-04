@@ -1,4 +1,4 @@
 // packages/pkg-b/index.ts
-import { sum } from "pkg-a";
+import { sum } from "savage-pkg-a";
 
 sum(1, 2);

@@ -25,9 +25,9 @@ importers:
         version: 5.2.2
 
   packages/pkg-b:
-    devDependencies:
-      pkg-a:
-        specifier: workspace:^
+    dependencies:
+      savage-pkg-a:
+        specifier: workspace:*
         version: link:../pkg-a
 
 packages:
