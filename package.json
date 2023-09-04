@@ -1,6 +1,6 @@
 {
-	"name": "516.2_monorepo",
-	"version": "1.0.2",
+	"name": "savage-demo-monorepo",
+	"version": "1.0.3",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
