@@ -21,6 +21,9 @@ importers:
       lerna:
         specifier: ^7.2.0
         version: 7.2.0
+      savage-utils:
+        specifier: 1.0.50
+        version: 1.0.50
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -4217,6 +4220,16 @@ packages:
 
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: true
+
+  /savage-data-types@1.0.10:
+    resolution: {integrity: sha512-wZnraaXwtJNv9zIzTfYyne4zvAFCoGKNQeviREt4kJJV8K3v3YAO91U8Va+Ms1YH+AXMhPgpbb8lkw3IiCHGnw==}
+    dev: true
+
+  /savage-utils@1.0.50:
+    resolution: {integrity: sha512-OBYXmlOMje4Zi4m+vBX5QxIQAJwnKBdUhegE2rW7EkyeAwUW+g0r2gqCk7ySQbpBKobGTCtHN7ZQ8KzuUpUZOA==}
+    dependencies:
+      savage-data-types: 1.0.10
     dev: true
 
   /semver@5.7.2:
