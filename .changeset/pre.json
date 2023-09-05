@@ -1,0 +1,13 @@
+{
+  "mode": "pre",
+  "tag": "rc",
+  "initialVersions": {
+    "savage-pkg-a": "3.1.1",
+    "savage-pkg-b": "3.0.2",
+    "savage-pkg-c": "1.1.0-beta.0"
+  },
+  "changesets": [
+    "shy-pandas-remember",
+    "three-ducks-argue"
+  ]
+}

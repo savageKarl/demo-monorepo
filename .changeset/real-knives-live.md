@@ -1,5 +1,0 @@
----
-"pkg-a": major
----
-
-playing
