@@ -22,13 +22,13 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       typescript:
-        specifier: ^5.2.2
+        specifier: 5.2.2
         version: 5.2.2
 
   packages/pkg-a:
     devDependencies:
       typescript:
-        specifier: ^5.2.2
+        specifier: 5.2.2
         version: 5.2.2
 
   packages/pkg-b:
