@@ -1,3 +1,32 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.1.4](https://github.com/savage181855/monorepo/compare/savage-pkg-b@3.0.2...savage-pkg-b@3.1.4) (2023-09-05)
+
+
+
+## 3.1.2 (2023-09-05)
+
+
+
+## 3.1.1 (2023-09-05)
+
+
+
+## 0.0.1 (2023-09-05)
+
+
+
+## 1.0.12 (2023-09-04)
+
+**Note:** Version bump only for package savage-pkg-b
+
+
+
+
+
 # savage-pkg-b
 
 ## 3.0.2
